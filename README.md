@@ -8,7 +8,6 @@ For this project, the following network topology was created:
 For the deployment (as well as certain configurations), the process was automated using Ansible. Utilizing Ansible's YAML playbook, specific tasks are defined. For example, to deploy Filebeat, which was used for logging, the following playbook was used:
 
 ```yml
----
 - name: Filebeat Deployment
   hosts: elk
   become: yes
