@@ -29,7 +29,7 @@ The topology is reflected in the following network diagram:
 
 ![Net_Topology](Capture.PNG)
 
-### Configuration
+### Deployment
 
 For the deployment (as well as certain configurations), the process was automated using Ansible. Utilizing Ansible's YAML playbook, specific tasks are defined. For example, to deploy Filebeat, which was used for logging, the following playbook was used:
 
