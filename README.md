@@ -3,4 +3,4 @@ Week 13 - Project 1
 
 For this project, the following network topology was created:
 
-![Net_Topology](Capture.png)
+![Net_Topology](Capture.PNG)
