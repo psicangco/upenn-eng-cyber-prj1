@@ -1,5 +1,5 @@
 
-# upenn-eng-cyber-prj1
+# upenn-eng-cyber - Project 1: ELK Stack
 Week 13 - Project 1
 
 ## Project  Overview
