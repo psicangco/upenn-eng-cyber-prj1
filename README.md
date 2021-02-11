@@ -38,3 +38,15 @@ For the deployment (as well as certain configurations), the process was automate
 - ![Filebeat](yaml/filebeat.yaml)
 - ![Metricbeat](yaml/metricbeat.yaml)
 - ![Docker](yaml/docker.yaml)
+
+### Network Security
+The Ansible machine is the only node found in the network topology that has access to the internet. The rest are restricted to only intranet access. 
+
+## Jumpbox Provisioner Accessibility
+Accessiblity to the Ansible/Jumpbox Provisioner machine itself is restricted with the following rules
+- IP: 73.12.X.X
+- Port: 32
+
+## Intranet Accessibility
+All nodes within the network can only be accessed via the SSH Protocol:
+
