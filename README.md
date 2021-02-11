@@ -1,7 +1,7 @@
 # upenn-eng-cyber-prj1
 Week 13 - Project 1
 
-## Topology Overview
+## Project  Overview
 
 The goal is to have an infrastructure that features both **load balancing** of inbound traffic as well as **monitoring** of a web application.
 
@@ -23,9 +23,13 @@ To supplement these features, the following are also deployed:
 - Filebeat - used to forward log data to either Elasticsearch (for ease of retrieval) or Logstash (for indexing and archiving)
 - Metricbeat - used to collect key indicators from a given server, whether it is data on the operating system or running services. This too can output this data to Elasticsearch or Logstash with the same use case and benefits
 
+### Network Topology
+
 The topology is reflected in the following network diagram: 
 
 ![Net_Topology](Capture.PNG)
+
+### Configuration
 
 For the deployment (as well as certain configurations), the process was automated using Ansible. Utilizing Ansible's YAML playbook, specific tasks are defined. For example, to deploy Filebeat, which was used for logging, the following playbook was used:
 
