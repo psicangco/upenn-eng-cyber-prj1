@@ -1,3 +1,4 @@
+
 # upenn-eng-cyber-prj1
 Week 13 - Project 1
 
@@ -31,13 +32,26 @@ The topology is reflected in the following network diagram:
 
 ### Deployment
 
-For the deployment (as well as certain configurations), the process was automated using Ansible. Utilizing Ansible's YAML playbook, specific tasks are defined. The following were deployed/configured (along with dependencies) using the corresponding YAML playbooks:
-
+For the deployment (as well as certain configurations), the process was automated using Ansible. Utilizing Ansible's YAML playbook, specific tasks can be defined.
+## Playbooks
+The following were deployed/configured (along with dependencies) using the corresponding YAML playbooks:
 
 - ![ELK Stack](yaml/ELK.yaml)
 - ![Filebeat](yaml/filebeat.yaml)
 - ![Metricbeat](yaml/metricbeat.yaml)
 - ![Docker](yaml/docker.yaml)
+
+With an Ansible node pre-configured (assuming proper Jumpbox priveleges), which can be verified with the shell command
+```
+ansible --version
+```
+, the playbooks can be executed by:
+- Saving your playbook to your Ansible installation directory
+- Updating your Ansible configuration with proper network properties (i.e. ports to be used); this can be done by modifying the hosts file in your Ansible installation directory
+- Execution of the playbook (assuming the YAML files are in the correct directory and with no syntax errors):
+```
+absible-playbook <playbookname>.yml
+```
 
 ### Network Security
 The Ansible machine is the only node found in the network topology that has access to the internet. The rest are restricted to only intranet access. 
@@ -48,7 +62,7 @@ Accessiblity to the Ansible/Jumpbox Provisioner machine itself is restricted wit
 - Port: 32
 
 ## Intranet Accessibility
-All nodes within the network can only be accessed via the SSH Protocol (Port 22):
+All nodes within the network can only be accessed via the SSH Protocol (**Port 22**):
 
 
 | Name     | IP Whitelist        |
