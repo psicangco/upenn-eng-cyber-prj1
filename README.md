@@ -48,5 +48,11 @@ Accessiblity to the Ansible/Jumpbox Provisioner machine itself is restricted wit
 - Port: 32
 
 ## Intranet Accessibility
-All nodes within the network can only be accessed via the SSH Protocol:
+All nodes within the network can only be accessed via the SSH Protocol (Port 22):
 
+
+| Name     | IP Whitelist        |
+|----------|---------------------|
+| WEB1     | 10.1.0.5            |
+| WEB2     | 10.1.0.6            |
+| ELK      | 10.1.0.4            |
